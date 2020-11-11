@@ -16,8 +16,8 @@ from torchtext import data
 from torchtext import datasets
 from torchtext import vocab
 
-from Baselines.Utils.utils import word_tokenize, get_device, epoch_time, classifiction_metric
-from Baselines.Utils.arc_embedding_utils import load_data
+from Utils.utils import word_tokenize, get_device, epoch_time, classifiction_metric
+from Utils.arc_embedding_utils import load_data
 
 
 def train(epoch_num, model, train_dataloader, dev_dataloader, optimizer, criterion, label_list, out_model_file, log_dir,
@@ -171,7 +171,7 @@ def main(config, model_filename):
     word_emb = text_field.vocab.vectors
 
     if config.model_name == "GAReader":
-        from Baselines.GAReader.GAReader import GAReader
+        from GAReader.GAReader import GAReader
         model = GAReader(
             config.glove_word_dim, config.output_dim, config.hidden_size,
             config.rnn_num_layers, config.ga_layers, config.bidirectional,
@@ -211,6 +211,6 @@ if __name__ == "__main__":
     model_filename = "model_adam1.pt"
 
     if model_name == "GAReader":
-        from Baselines.GAReader import args, GAReader
+        from GAReader import args, GAReader
 
         main(args.get_args(data_dir, cache_dir, embedding_folder, output_dir, log_dir), model_filename)
