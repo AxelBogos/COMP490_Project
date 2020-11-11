@@ -201,8 +201,8 @@ def main(config, model_filename):
 if __name__ == "__main__":
 
     model_name = "GAReader"
-    data_dir = "/Users/axelbogos/Documents/GitHub/COMP490/data/baseline_data/"
-    embedding_folder = "/Users/axelbogos/embedding_folder/"
+    data_dir = "/content/COMP490_Project/data/baseline_data/"
+    embedding_folder = "/content/drive/My Drive/embedding_folder/"
 
     output_dir = "./ga/output"
     cache_dir = "./ga/cache"
