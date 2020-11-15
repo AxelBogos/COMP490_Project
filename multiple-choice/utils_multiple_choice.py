@@ -288,9 +288,7 @@ class SwagProcessor(DataProcessor):
         examples = [
             InputExample(
                 example_id=line[0],
-                question="",  # in the swag dataset, the
-                # common beginning of each
-                # choice is stored in "sent2".
+                question="",
                 contexts=[line[3], line[3], line[3], line[3], line[3]],
                 endings=[line[4], line[5], line[6], line[7], line[8]],
                 label=line[-1]
