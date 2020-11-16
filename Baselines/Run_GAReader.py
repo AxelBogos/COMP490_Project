@@ -171,12 +171,12 @@ def main(config, model_filename):
     word_emb = text_field.vocab.vectors
 
     if config.model_name == "GAReader":
-        from .GAReader.GAReader import GAReader
+        from GAReader.GAReader import GAReader
         model = GAReader(
             config.glove_word_dim, config.output_dim, config.hidden_size,
             config.rnn_num_layers, config.ga_layers, config.bidirectional,
             config.dropout, word_emb)
-        print(model.parameters)
+        print(model.parameters())
 
     # optimizer = optim.Adam(model.parameters(), lr=config.lr)
     optimizer = optim.SGD(model.parameters(), lr=config.lr)
