@@ -176,7 +176,7 @@ def main(config, model_filename):
             config.glove_word_dim, config.output_dim, config.hidden_size,
             config.rnn_num_layers, config.ga_layers, config.bidirectional,
             config.dropout, word_emb)
-        print(model)
+        print(model.parameters)
 
     # optimizer = optim.Adam(model.parameters(), lr=config.lr)
     optimizer = optim.SGD(model.parameters(), lr=config.lr)
