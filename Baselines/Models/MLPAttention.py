@@ -2,7 +2,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch
 
-from Models.Linear import Linear
+from Baselines.Models.Linear import Linear
 
 class MLPAttention(nn.Module):
 
