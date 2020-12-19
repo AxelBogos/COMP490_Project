@@ -1,9 +1,8 @@
 # COMP490 Sem-Eval Task
 
-[Task Repo](https://github.com/boyuanzheng010/SemEval2021-Reading-Comprehension-of-Abstract-Meaning) <br>
-[My Experiments Metrics](https://docs.google.com/spreadsheets/d/1Bl9LLCRTUVNzDOzieERhAOdLHjVY3Bt2F8oM_VM9SIk/edit?usp=sharing)<br>
-[Run Baseline](https://colab.research.google.com/drive/1UlybuHVlET2pXNFZtLijnyvKl8xYmM-R?usp=sharing)<br>
-[Run Task1](https://colab.research.google.com/drive/1zkODWljKueAV863IqI3RwwtkrKmmKR9W?usp=sharing)<br>
+[Sem-Eval Task Repo](https://github.com/boyuanzheng010/SemEval2021-Reading-Comprehension-of-Abstract-Meaning) <br>
+[Experiments Metrics](https://docs.google.com/spreadsheets/d/1pvZ0Beal91XdtRxNQe0eNDgPDkew5T3-iaJOksysZk0/edit?usp=sharing)<br>
+
 ---
 
 
