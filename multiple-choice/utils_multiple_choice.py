@@ -261,11 +261,11 @@ class SwagProcessor(DataProcessor):
     def get_dev_examples(self, data_dir):
         """See base class."""
         logger.info("LOOKING AT {} dev".format(data_dir))
-        return self._create_examples(self._read_csv(os.path.join(data_dir, "val.csv")), "dev")
+        return self._create_examples(self._read_csv(os.path.join(data_dir, "dev.csv")), "dev")
 
     def get_test_examples(self, data_dir):
         """See base class."""
-        logger.info("LOOKING AT {} dev".format(data_dir))
+        logger.info("LOOKING AT {} test".format(data_dir))
         raise ValueError(
             "For swag testing, the input file does not contain a label column. It can not be tested in current code"
             "setting!"

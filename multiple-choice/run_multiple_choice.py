@@ -20,6 +20,7 @@ import logging
 import os
 from dataclasses import dataclass, field
 from typing import Dict, Optional
+from sklearn.metrics import precision_recall_fscore_support
 
 import numpy as np
 
@@ -178,7 +179,14 @@ def main():
 
     def compute_metrics(p: EvalPrediction) -> Dict:
         preds = np.argmax(p.predictions, axis=1)
-        return {"acc": simple_accuracy(preds, p.label_ids)}
+        #p, r, f = precision_recall_fscore_support(p.label_ids,preds)
+        return {
+            "acc": simple_accuracy(preds, p.label_ids)#,
+            #"prec": p,
+            #"recall": r,
+            #"f1": f
+
+        }
 
     # Initialize our Trainer
     trainer = Trainer(
@@ -227,3 +235,5 @@ def _mp_fn(index):
 
 if __name__ == "__main__":
     main()
+
+
