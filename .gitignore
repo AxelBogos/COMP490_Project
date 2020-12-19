@@ -6,6 +6,8 @@ __pycache__/
 Data_cleanup.ipynb
 Baselines/ga
 embedding_folder
+train_results
+plot_loss.ipynb
 *.idea
 .DS_Store
 # C extensions
