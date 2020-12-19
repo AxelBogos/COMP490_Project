@@ -4,6 +4,8 @@ __pycache__/
 *$py.class
 
 Data_cleanup.ipynb
+Baselines/ga
+embedding_folder
 *.idea
 .DS_Store
 # C extensions
